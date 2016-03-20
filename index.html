@@ -1,0 +1,114 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Miami Bootstarp Website Template | Home :: w3layouts</title>
+		<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		 <script src="js/jquery.min.js"></script>
+		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		<!---- start-smoth-scrolling---->
+		 <!-- Custom Theme files -->
+		<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts---->
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,400italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,800,300,700' rel='stylesheet' type='text/css'>
+		<style type="text/css">
+		#apDiv1 {
+	left: 143px;
+	top: 200px;
+	width:50%;
+	height: 540px;
+	z-index: 4;
+}
+        </style>
+		<!----//webfonts---->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<!-----start-container---->
+			
+			<div class="bg">
+				<div class="container">
+				<div class="header">
+					<div class="contact-no">
+						<span>8 800 500 50 50</span>
+					</div>
+					<div class="logo">
+						<a href="#"><img src="images/logo.png" title="miami" /></a>
+					</div>
+					<div class="contact-order">
+						<a href="#">Call to order</a>
+					</div>
+                    
+					<div class="clearfix"> </div>
+				</div><div class="container">
+				<form method="post" action="form2email.php">
+<input type="hidden" name="to" value="me@mydomain">
+<input type="hidden" name="subject" value="Website Feedback">
+<input type="hidden" name="name_reqd">
+<input type="hidden" name="email_reqd">
+<input type="hidden" name="message_reqd">
+<p>Name: <input type="text" name="name">
+<p>Email: <input type="text" name="email">
+<p><textarea cols="50" rows="5" name="message"></textarea>
+<p><input type="submit" value="Send Feedback">
+</form>
+
+			</div>
+					<!----start-top-nav---->
+				 
+			</div>
+		</div>
+		<!-----start-about---->
+		<div id="about" class="about">
+				<div id="apDiv1"></div>
+
+		</div>
+		<!-----//End-about---->
+		
+		
+		<!----start-footer---->
+
+		<!----//End-footer---->
+		<!-----//End-container---->
+	</body>
+</html>
+
